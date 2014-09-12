@@ -1,6 +1,6 @@
 # Billiard Ball Simulator
 
-This program is designed to run large scale billiard ball simulations. It is capable of handling around 10,000,000 balls. It was used to investigate dynamical systems with entropy boundry conditions and pertibations. There is a strange effect that given time boundry conditions the effect of pertibations will follow the direction of entropy increase. It is hypothisized that causaility is a result of entropy increase. More information on such matter can be found in my proffesors paper Causality is an Effect.  [a link]{http://arxiv.org/abs/cond-mat/0011507}
+This program is designed to run large scale billiard ball simulations. It is capable of handling around 10,000,000 balls. It was used to investigate dynamical systems with entropy boundry conditions and pertibations. There is a strange effect that given time boundry conditions the effect of pertibations will follow the direction of entropy increase. It is hypothisized that causaility is a result of entropy increase. More information on such matter can be found in my proffesors paper Causality is an Effect.  http://arxiv.org/abs/cond-mat/0011507
 
 ## Text file example
 

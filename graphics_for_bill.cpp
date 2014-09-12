@@ -390,7 +390,7 @@ int main(int argc, char* argv[]){
   glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
  
   // Create window
-  glutCreateWindow("q walk");
+  glutCreateWindow("bill");
 
   //  Enable Z-buffer depth test
   glEnable(GL_DEPTH_TEST);

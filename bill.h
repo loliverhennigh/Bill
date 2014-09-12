@@ -137,9 +137,9 @@ System::System(string file)
 
 	
 	renew_ensemble();
-	print_vector_vector(middle_box);
-	print_vector_vector(left_circle);
-	print_vector_vector(right_circle);
+	//print_vector_vector(middle_box);
+	//print_vector_vector(left_circle);
+	//print_vector_vector(right_circle);
 	calc_entropy();
 	entropys.push_back(entropy);
 
@@ -314,9 +314,9 @@ void System::after_time(float t)
 	renew_ensemble();
 	calc_entropy();
 	entropys.push_back(entropy);
-	print_vector_vector(middle_box);
-	print_vector_vector(left_circle);
-	print_vector_vector(right_circle);
+	//print_vector_vector(middle_box);
+	//print_vector_vector(left_circle);
+	//print_vector_vector(right_circle);
 }
 
 // the preturb step!

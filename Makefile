@@ -1,6 +1,6 @@
 
 bill: graphics_for_bill.o
-	g++ $(CFLAGS) -o bill graphics_for_bill.o -lm -lgsl -lglut
+	g++ $(CFLAGS) -o bill graphics_for_bill.o -lGL -lm -lgsl -lgslcblas -lglut
 
 graphics_for_bill.o: graphics_for_bill.cpp
 	g++ $(CFLAGS) -c graphics_for_bill.cpp

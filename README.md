@@ -1,8 +1,6 @@
 # Billiard Ball Simulator
 
-This program is designed to run large scale billiard ball simulations. It is capable of handling around 10,000,000 balls in
-
-
+This program is designed to run large scale billiard ball simulations. It is capable of handling around 10,000,000 balls. It was used to investigate dynamical systems with entropy boundry conditions and pertibations. There is a strange effect that given time boundry conditions the effect of pertibations will follow the direction of entropy increase. It is hypothisized that causaility is a result of entropy increase. More information on such matter can be found in my proffesors paper Causality is an Effect.  [a link]{http://arxiv.org/abs/cond-mat/0011507}
 
 ## Text file example
 
@@ -11,17 +9,18 @@ Here is what a text file containing ball information might look like
 ```
 10000 (number of balls
 
--1  0  .4  0.0  (four numbers, x, y, velocity_x, velocity_y) 
+-1  0 (x, y position 
+.4  0.0  (velocity_x, velocity_y) 
+...
 
 ...
 ```
 
-When running this file it produces this screen
+When running this file using the graphics it produces this simulation
 
 
-Here is another example of a file called pres.txt
 
-![ScreenShot](https://github.com/loliverhennigh/Quantum-Walk-Simulator/blob/master/pres.png)
+![ScreenShot](https://github.com/loliverhennigh/Bill/blob/master/run_pic.png)
 
 
 ## How it works
@@ -54,7 +53,7 @@ w,a,s,d = move the image
 ## How to compile
 
 
-To use this program without graphics it is very simple. A example main file is provied to show all file io commands.
+To use this program without graphics it is very simple. A example main file called bill.cpp is provied to show all file io commands.
 
 The graphics side is very simple as well. You will need gsl and glut (if you would like graphics). To install these on ubunto simply type
 

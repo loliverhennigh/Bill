@@ -17,22 +17,27 @@ int main()
 	float dx = .3;
 	float pre = .4;
 
+	// generates a random file of balls and prints it to test.txt
 	print_file_rand_low("test.txt", 1000000);
+	// loads the file just printed
 	System a("test.txt");
-//	printf("%g \n", a.entropy);
 
+	// runs the system for time
 	for(int i = 0; i < step; i++)
 	{
 		a.after_time(dx);
 	}
+	// causes some pertibation
 	a.preturb_step(pre);
+	// run the system more
 	for(int i = 0; i < to-step; i++)
 	{
 		a.after_time(dx);
 	}
+	// print all the particle that lie in a small region. This gives us a system with low entropy boundry conditions
 	a.System_print_file_low("test1.txt");
 
-
+	// now run that system and record its entropy for graphing 
 	System b("test1.txt");
 	for(int i = 0; i < step; i++)
 	{
@@ -43,7 +48,7 @@ int main()
 	{
 		b.after_time(dx);
 	}
-
+	// print the recorded entropy for graphing
 	b.Entropy_print_file("test_pert_50.txt");
 
 	return 0;
